@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<section class="container">
+  <div class ="row">
+    <div class ="col"</div>
+    <img src="img/logo.png" alt="logo for encouraging words" class="col-8">
+   <div class="row">
+        <p class="col-sm">Hi, it's Nice to meet you! What should we call you?</p>
+        <input type="text" class="col-sm" placeholder="name" id="name">
+    </div>
+    <div class="row">
+        <p class="col-sm">What is it that YOU need to hear right now to spark your spirits?</p>
+        <textarea id="encouragement"
+        placeholder="Words of Encouragment"
+        class="col-sm"></textarea>
+    </div>
+    <div class="row">
+        <p class="col-sm text-center">Anything else?</p>
+        <textarea id="post-script"
+        placeholder="Parting words"
+        class="col-sm"></textarea>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <label for="speechVolume" class="me-0 col form-label">Volume</label>
+        <input type="range" class="col ms-0 me-2 form-range" id="speechVolume" min="0" max="100" onchange="updaterange(this.value)";>
+        <label for="speechSpeed" class="mx-0 col form-label">Speed</label>
+        <input type="range" class="col form-range" step="1" id="speechSpeed" min="0" max="100" onchange="updaterange(this.value);">
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <button onclick="encourage()" class="col-8 btn btn-primary" id="button">Hear it! </button>
+        <div class="col">
+      </div>
+      <div class="row">
+        <div class="col">
+        <button onclick="surpriseMe()" class="col-8 btn btn-primary">Surprise me!</button>
+        <div class="col">
+      </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

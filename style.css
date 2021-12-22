@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(#FFb5b5, #FED9CA) 
+}
+.row {
+  margin: 4vh 0;
+}
+input {
+  height: 40px;
+  text-align: center;
+}
+textarea {
+  Width: 60%;
+  height: 100px;
+}
+textarea #post-script {
+  Width: 60%;
+  height: 100px;
+}
+textarea::placeholder {
+  text-align: center;
+  line-height: 50px;
+}
+ .button {
+   background-color:#49BEB7;
+ }
